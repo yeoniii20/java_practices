@@ -1,10 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>이건 나의 첫 자봐ㅏㅏㅏ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #4CAF50;
+            font-size: 2.5em;
+        }
+    </style>
 </head>
 <body>
-
+<h1 th:text="${message}"></h1>
+<p>안녕</p>
 </body>
 </html>
